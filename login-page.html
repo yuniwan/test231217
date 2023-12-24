@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        .slogan {
+            text-align: center;
+            background: #0e66a1;
+            color: #fff;
+            padding: 10px 0;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .form-item {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            gap: 8px;
+        }
+
+        .form-input {
+            width: 100%;
+            height: 50px;
+            padding: 5px;
+            border: 0;
+            outline: 0;
+            box-shadow: 0 0 1px 1px #0c5da0 inset;
+            font-size: 1.4rem;
+        }
+
+        .form-btn {
+            background: red;
+            color: #fff;
+            border: 0;
+            padding: 10px 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="slogan">會員登入</h1>
+        <form action=" https://book.niceinfos.com/api/form/" enctype="multipart/form-data" method="post">
+            <div class="form-item">
+                <label for="login-account">帳號</label>
+                <input class="form-input" type="text" id="login-account" name="account" value="" placeholder="請輸入帳號">
+            </div>
+            <div class="form-item">
+                <label for="login-password">密碼</label>
+                <input class="form-input" type="password" id="login-password" name="password" value=""
+                    placeholder="請輸入密碼">
+            </div>
+            <div class="form-item"></div>
+            <div>
+                <button type="button">繼續</button>
+            </div>
+            <div class="form-item">
+                <label for="">性別</label>
+                <div>
+                    <input type="radio" id="m-gender" name="gender" value="M"><label for="gender">男</label>
+                    <input type="radio" id="f-gender" name="gender" value="F"><label for="gender">女</label>
+                </div>
+            </div>
+            <div class="form-item">
+                <label for="">興趣</label>
+                <input type="checkbox" name="hobby[]" id="hobby-1" value="h1"> <label for="hobby-1">h1</label>
+                <input type="checkbox" name="hobby[]" id="hobby-2" value="h2"> <label for="hobby-1">h2</label>
+                <input type="checkbox" name="hobby[]" id="hobby-3" value="h3"> <label for="hobby-1">h3</label>
+                <input type="checkbox" name="hobby[]" id="hobby-4" value="h4"> <label for="hobby-1">h4</label>
+                <input type="checkbox" name="hobby[]" id="hobby-5" value="h5"> <label for="hobby-1">h5</label>
+            </div>
+            <div class="form-item">
+                <label for="register_city">縣市</label>
+                <select name="city" id="register_city">
+                    <option value="">選擇城市</option>
+                    <option value="tp">台北市</option>
+                    <option value="tc">台中市</option>
+                    <option value="kh">高雄市</option>
+                </select>
+            </div>
+            <style>
+                #register_feedback {
+                    height: 200px;
+                    padding: 10px;
+                    resize: none;
+                }
+            </style>
+            <div class="form-item">
+                <label for="register_feedback">意見回饋</label>
+                <textarea name="feedback" id="register_feedback"></textarea>
+            </div>
+            <div class="form-item">
+                <label for="register_video">上傳影片</label>
+                <input type="file" id="register_video" name="video" accept="video/*">
+            </div>
+            <div class="form-btn">
+                <button class="form-btn">登入</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+
+<!-- <script>
+    const sayHi = () => {
+        alert('Welcome~~');
+    }
+</script> -->
