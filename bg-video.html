@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .video-slogan {
+        z-index: 3;
+        color: white;
+    }
+
+    .responnsive-video {
+        z-index: 1;
+
+    }
+
+    .video-mask {
+        z-index: 2;
+    }
+</style>
+
+<body>
+    <div>
+        <h1 class="video=slogan">
+            Welcome!
+        </h1>
+
+        <video autoplay loop muted class="responsive-video">
+            <source src="assets/videos/sample-10s.mp4" class="video-mask">
+        </video>
+    </div>
+</body>
+
+</html>
