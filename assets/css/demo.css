@@ -1,0 +1,10 @@
+.cube{
+    background-color: yellow;
+    color: orange;
+    width: 60px;
+    height: 60px;
+    margin:10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
