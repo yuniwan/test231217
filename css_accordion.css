@@ -1,0 +1,57 @@
+.slogan {
+    display: flex;
+    height: 60px;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+    background: rgb(32, 72, 202);
+    color: #fff;
+}
+
+.accrodion .item-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background: #7B708F;
+    color: #fff;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.accrodion .item-body {
+    padding: 20px;
+    border: 1px solid #7B708F;
+}
+
+.on-close {
+    display: none;
+}
+
+.item-body {
+    display: none;
+}
+
+.item-header:hover {
+    background-color: #9284ad;
+}
+
+.item-header .on-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-flex;
+    width: 10px;
+    height: 100%;
+    display: none;
+    background-color: red;
+}
+
+.item-header:hover .on-hover {
+    display: inline-flex;
+}
+
+.accrodion .item-switch:checked~.item-body {
+    display: block;
+}
