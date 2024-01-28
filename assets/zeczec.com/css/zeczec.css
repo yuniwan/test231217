@@ -1,0 +1,141 @@
+html,
+body {
+    background-color: #f1f2ef;
+}
+
+.header {
+    height: auto;
+    background-color: #fff;
+}
+
+.header .wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.header .wrap .left-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.header .wrap .left-side .logo {
+    position: relative;
+}
+
+.header .logo::after {
+    content: '';
+    position: absolute;
+    right: -25px;
+    top: 5px;
+    width: 1px;
+    height: 30px;
+    background: rgb(199, 199, 199);
+}
+
+.header .wrap .left-side .logo img {
+    height: 36px;
+}
+
+.header .wrap .left-side ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header .wrap .right-side ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.button {
+    padding: 5px 10px;
+    background-color: #f1f2ef;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.button-fb {
+    color: rgb(46, 87, 221);
+}
+
+.main {
+    min-height: 100vh;
+}
+
+.banner {
+    height: 600px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.banner .cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    overflow: hidden;
+    background-color: red;
+}
+
+.banner .banner-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 3;
+    background-color: yellow;
+}
+
+.footer {
+    background: #f9fafb;
+    border-top: 1px solid #dbdbdb;
+    padding: 20px;
+}
+
+.footer .wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer .wrap .logo img {
+    height: 36px;
+}
+
+.other-project {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    font-size: 0.8rem;
+}
+
+.other-project .item {
+    height: 100px;
+    display: flex;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px 1px #ebebeb;
+    border-radius: 4px;
+    position: relative;
+}
+
+.other-project .item .cover {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    z-index: 3;
+}

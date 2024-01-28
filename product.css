@@ -71,6 +71,6 @@
     display: flex;
     justify-content: center;
     transform: rotate(45deg);
-    top: 0px;
-    left: 0px;
+    top: 20px;
+    right: 5px;
 }
