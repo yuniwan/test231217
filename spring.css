@@ -1,0 +1,10 @@
+.slogan {
+    margin: 20px;
+}
+
+.demo {
+    border: 2px dashed gray;
+    margin: 20px;
+    padding: 10px;
+    min-height: 300px;
+}
