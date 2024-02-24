@@ -1,0 +1,76 @@
+.slogan {
+    margin: 20px;
+}
+
+.demo {
+    margin: 20px 0;
+    border: 2px dashed #8f8f8f;
+    padding: 20px;
+    min-height: 200px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px
+}
+
+.product-list .item {
+    background: #439aeb;
+    color: #fff;
+    padding: 10px;
+}
+
+.p-cover {
+    height: 200px;
+    background-color: rgb(97, 97, 97);
+    margin-bottom: 15px;
+    background-image: url(/assets/images/salad.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.p-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.product-list .item .content {
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.product-list .item .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-list .item .buy-now {
+    padding: 10px 20px;
+    border: 0;
+    background: rgb(16, 190, 94);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.product-list .item .buy-now:hover {
+    background: rgb(10, 155, 75);
+}
+
+.discount {
+    position: absolute;
+    font-size: 15px;
+    color: red;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    transform: rotate(45deg);
+    top: 20px;
+    right: 5px;
+}
