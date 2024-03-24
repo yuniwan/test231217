@@ -1,0 +1,106 @@
+[v-cloak] {
+    display: none;
+}
+
+body {
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.header {
+    background: #5f5f5f;
+    color: #fff;
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hd-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tabs-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.tabs-name a {
+    display: block;
+    padding: 5px 15px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    transition: 0.3s;
+}
+
+.tabs-name li:hover a,
+.tabs-name li.active a {
+    background: rgb(28, 97, 201);
+    color: #fff;
+}
+
+.tabs-content>li {
+    display: none;
+}
+
+.tabs-content>li.active {
+    display: block;
+}
+
+.switch-component-wrap {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    user-select: none;
+}
+
+.switch-component {
+    display: flex;
+    align-items: center;
+    width: 70px;
+    background: #969696;
+    height: 30px;
+    border-radius: 100px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.switch-component.active {
+    background: #2bb587;
+}
+
+.switch-component::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 28px;
+    height: 28px;
+    background: #fff;
+    border-radius: 100px;
+    transition: 0.3s;
+}
+
+.switch-component.active::after {
+    left: calc(100% - 28px - 2px);
+}
+
+.accordion_title {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(34, 99, 241);
+    color: #fff;
+    border-radius: 4px;
+    left: 1px;
+    position: relative;
+    gap: 15px;
+}
